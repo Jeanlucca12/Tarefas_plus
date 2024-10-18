@@ -1,8 +1,20 @@
 {
     "rewrites": [
       {
-        "source": "/(.*)",
-        "destination": "/"
+        "source": "/dashboard",
+        "destination": "/pages/dashboard/index.tsx"
+      },
+      {
+        "source": "/task",
+        "destination": "/pages/task/index.tsx"
+      },
+      {
+        "source": "/task/:id",
+        "destination": "/pages/task/[id].tsx"
+      },
+      {
+        "source": "/api",
+        "destination": "/pages/api/index.tsx"
       }
     ]
   }
